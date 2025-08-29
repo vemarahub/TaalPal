@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaalPal - Learn Dutch A2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <i class="fas fa-graduation-cap"></i>
+            <span>TaalPal</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#grammar" class="nav-link">Grammar</a></li>
+            <li><a href="#vocabulary" class="nav-link">Vocabulary</a></li>
+            <li><a href="#test" class="nav-link">Mock Test</a></li>
+            <li><a href="#chat" class="nav-link">AI Chat</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to <span class="highlight">TaalPal</span></h1>
+            <p>Master Dutch at A2 level with interactive lessons, grammar exercises, and AI-powered conversations</p>
+            <div class="hero-buttons">
+                <button id="start-learning-btn" class="btn btn-primary">
+                    <i class="fas fa-book"></i> Start Learning
+                </button>
+                <button id="chat-ai-btn" class="btn btn-secondary">
+                    <i class="fas fa-comments"></i> Chat with AI
+                </button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="floating-card">
+                <i class="fas fa-language"></i>
+                <span>A2 Level Dutch</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grammar Section -->
+    <section id="grammar" class="section">
+        <div class="container">
+            <h2><i class="fas fa-book-open"></i> Grammar Lessons</h2>
+            <p class="section-subtitle">Master Dutch grammar step by step</p>
+            <div class="cards-grid">
+                <div class="card" data-topic-id="verbs">
+                    <div class="card-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Werkwoorden (Verbs)</h3>
+                    <p>Learn verb conjugations, irregular verbs, and separable verbs</p>
+                    <div class="card-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <span>0/12 lessons</span>
+                    </div>
+                </div>
+
+                <div class="card" data-topic-id="sentence-structure">
+                    <div class="card-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3>Sentence Structure</h3>
+                    <p>Master hoofdzin, inversie, and complex sentences</p>
+                    <div class="card-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <span>0/8 lessons</span>
+                    </div>
+                </div>
+
+                <div class="card" data-topic-id="tenses">
+                    <div class="card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Tenses</h3>
+                    <p>Present, past (OVT), and perfect tenses</p>
+                    <div class="card-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <span>0/6 lessons</span>
+                    </div>
+                </div>
+
+                <div class="card" data-topic-id="adjectives">
+                    <div class="card-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Adjectives</h3>
+                    <p>Comparatives, superlatives, and adjective endings</p>
+                    <div class="card-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <span>0/4 lessons</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vocabulary Section -->
+    <section id="vocabulary" class="section bg-light">
+        <div class="container">
+            <h2><i class="fas fa-spell-check"></i> Vocabulary</h2>
+            <p class="section-subtitle">Build your Dutch vocabulary with themed lessons</p>
+            <div class="vocab-categories">
+                <div class="vocab-card" data-topic-id="daily-life">
+                    <div class="vocab-icon">🏠</div>
+                    <h3>Daily Life</h3>
+                    <p>Home, family, daily routines</p>
+                    <span class="word-count">120 words</span>
+                </div>
+
+                <div class="vocab-card" data-topic-id="time-dates">
+                    <div class="vocab-icon">📅</div>
+                    <h3>Time & Dates</h3>
+                    <p>Days, months, telling time</p>
+                    <span class="word-count">85 words</span>
+                </div>
+
+                <div class="vocab-card" data-topic-id="directions">
+                    <div class="vocab-icon">🗺️</div>
+                    <h3>Directions</h3>
+                    <p>Navigation and locations</p>
+                    <span class="word-count">60 words</span>
+                </div>
+
+                <div class="vocab-card" data-topic-id="greetings">
+                    <div class="vocab-icon">👋</div>
+                    <h3>Greetings</h3>
+                    <p>Formal and informal greetings</p>
+                    <span class="word-count">40 words</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mock Test Section -->
+    <section id="test" class="section">
+        <div class="container">
+            <h2><i class="fas fa-clipboard-check"></i> Mock Tests</h2>
+            <p class="section-subtitle">Test your Dutch skills with A2 level assessments</p>
+            <div class="test-options">
+                <div class="test-card">
+                    <div class="test-header">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Quick Test</h3>
+                    </div>
+                    <div class="test-details">
+                        <p>15 questions • 10 minutes</p>
+                        <ul>
+                            <li>Grammar basics</li>
+                            <li>Common vocabulary</li>
+                            <li>Simple sentences</li>
+                        </ul>
+                    </div>
+                    <button id="start-quick-test" class="btn btn-primary">Start Quick Test</button>
+                </div>
+
+                <div class="test-card featured">
+                    <div class="test-header">
+                        <i class="fas fa-star"></i>
+                        <h3>Full A2 Test</h3>
+                    </div>
+                    <div class="test-details">
+                        <p>50 questions • 45 minutes</p>
+                        <ul>
+                            <li>Complete grammar coverage</li>
+                            <li>Reading comprehension</li>
+                            <li>Vocabulary assessment</li>
+                        </ul>
+                    </div>
+                    <button id="start-full-test" class="btn btn-primary">Start Full Test</button>
+                </div>
+
+                <div class="test-card">
+                    <div class="test-header">
+                        <i class="fas fa-target"></i>
+                        <h3>Topic Test</h3>
+                    </div>
+                    <div class="test-details">
+                        <p>20 questions • 15 minutes</p>
+                        <ul>
+                            <li>Choose specific topics</li>
+                            <li>Focused practice</li>
+                            <li>Detailed feedback</li>
+                        </ul>
+                    </div>
+                    <button id="start-topic-test" class="btn btn-primary">Choose Topics</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chat Section -->
+    <section id="chat" class="section bg-light">
+        <div class="container">
+            <h2><i class="fas fa-robot"></i> AI Chat Assistant</h2>
+            <p class="section-subtitle">Practice Dutch conversation with our AI tutor</p>
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="chat-status">
+                        <div class="status-indicator online"></div>
+                        <span>AI Tutor is online</span>
+                    </div>
+                    <div class="chat-controls">
+                        <button id="clear-chat-btn" class="btn-icon" title="Clear chat">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message ai-message">
+                        <div class="message-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <p><strong>Dutch:</strong> Hallo! Ik ben je Nederlandse AI-tutor. Hoe gaat het met je?</p>
+                            <p><strong>English:</strong> Hello! I'm your Dutch AI tutor. How are you doing?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <div class="chat-input">
+                        <input type="text" id="chatInput" placeholder="Type your message in Dutch or English...">
+                        <button id="send-message-btn" class="send-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <div class="chat-suggestions">
+                        <button id="sugg1" class="suggestion-btn">Hoe heet je?</button>
+                        <button id="sugg2" class="suggestion-btn">Wat is het weer vandaag?</button>
+                        <button id="sugg3" class="suggestion-btn">Kun je me helpen?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TaalPal</h3>
+                <p>Your companion for learning Dutch at A2 level</p>
+            </div>
+            <div class="footer-section">
+                <h4>Features</h4>
+                <ul>
+                    <li>Interactive Grammar</li>
+                    <li>Vocabulary Builder</li>
+                    <li>Mock Tests</li>
+                    <li>AI Chat Assistant</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Built with ❤️ for Dutch learners</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
